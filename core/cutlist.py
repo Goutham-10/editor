@@ -161,7 +161,8 @@ def validate_cutlist(
                 if drift > WORD_BOUNDARY_TOLERANCE_S:
                     errors.append(
                         f"segment {seg.id}.{label}={t:.3f}s is {drift * 1000:.0f}ms from "
-                        f"the nearest word boundary (limit {WORD_BOUNDARY_TOLERANCE_S * 1000:.0f}ms)"
+                        "the nearest word boundary "
+                        f"(limit {WORD_BOUNDARY_TOLERANCE_S * 1000:.0f}ms)"
                     )
 
     total = sum(s.out_s - s.in_s for s in cutlist.segments)
