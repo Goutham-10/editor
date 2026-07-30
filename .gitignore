@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+
+# Job working dirs — large, disposable, reconstructible from source + cutlist
+storage/jobs/*
+!storage/jobs/.gitkeep
+
+# OS
+.DS_Store
+
+# Editor config (this repo happens to be opened in Obsidian too)
+.obsidian/
+
+# mypy/ruff caches
+.mypy_cache/
+.ruff_cache/
